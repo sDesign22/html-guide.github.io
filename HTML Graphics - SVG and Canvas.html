@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    HTML Graphics: https://www.w3schools.com/html/html5_canvas.asp
+	 - 4.8.16 SVG     SVG::- SVG Graphics
+	4.12.5 The canvas element 
+	  +		HTML Canvas Tutorial - https://www.w3schools.com/graphics/canvas_intro.asp
+
+	< svg>	Defines a container for SVG graphics -SVG defines vector-based graphics in XML format.	What is SVG? - SVG stands for Scalable Vector Graphics	SVG is used to define graphics for the Web	SVG is a W3C recommendation
+	SVG has several methods for drawing paths, boxes, circles, text, and graphic images. -
+	- Differences Between SVG and Canvas
+	<br>
+
+
+	<h3>HTML Canvas Graphics -</h3>
+	<h4>canvas Element - &lt;canvas></h4>
+	<p>
+		- Element used to draw graphics via scripting (usually JavaScript). EIs only a container for graphics, must use JavaScript to actually draw graphics.
+		Canvas has several methods for drawing paths, boxes, circles, text, and adding images.	-Add a JavaScript
+		- The canvas element provides scripts with a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, art, or other visual images on the fly. []
+		- Neither tag is omissible.
+		<details>
+			<summary> <b><em></em></b> </summary>
+			<dl> <dt>width</dt> <dd>Horizontal dimension - Specifies the width of the canvas, default value is 300:<i>pixels</i> </dd> </dl>
+			<dl> <dt>height</dt> <dd>Vertical dimension - Specifies the height of the canvas, default value is 150:<i>pixels</i> </dd> </dl>
+		</details>
+	<details>
+		<summary>Colors, Styles, and Shadows: Property and Methods</summary>		fillStyle	Sets or returns the color, gradient, or pattern used to fill the drawing	strokeStyle	Sets or returns the color, gradient, or pattern used for strokes
+		shadowColor	Sets or returns the color to use for shadows	shadowBlur	Sets or returns the blur level for shadows	shadowOffsetX	Sets or returns the horizontal distance of the shadow from the shape
+		shadowOffsetY	Sets or returns the vertical distance of the shadow from the shape
+		Method	Description	createLinearGradient()	Creates a linear gradient (to use on canvas content)	createPattern()	Repeats a specified element in the specified direction	createRadialGradient()	Creates a radial/circular gradient (to use on canvas content)
+		addColorStop()	Specifies the colors and stop positions in a gradient object		Text-	font	Sets or returns the current font properties for text content	textAlign	Sets or returns the current alignment for text content
+		textBaseline	Sets or returns the current text baseline used when drawing text		Method	Description	fillText()	Draws "filled" text on the canvas	strokeText()	Draws text on the canvas (no fill)
+		measureText()	Returns an object that contains the width of the specified text
+	</details>
+	<details>
+		<summary>Line Styles</summary>		lineCap	Sets or returns the style of the end caps for a line	lineJoin	Sets or returns the type of corner created, when two lines meet
+		lineWidth	Sets or returns the current line width	miterLimit	Sets or returns the maximum miter length		Rectangles-	rect()	Creates a rectangle	fillRect()	Draws a "filled" rectangle
+		strokeRect()	Draws a rectangle (no fill)	clearRect()	Clears the specified pixels within a given rectangle			Paths-	fill()	Fills the current drawing (path)	stroke()	Actually draws the path you have defined
+		beginPath()	Begins a path, or resets the current path	moveTo()	Moves the path to the specified point in the canvas, without creating a line	closePath()	Creates a path from the current point back to the starting point
+		lineTo()	Adds a new point and creates a line to that point from the last specified point in the canvas	clip()	Clips a region of any shape and size from the original canvas	quadraticCurveTo()	Creates a quadratic Bézier curve
+		bezierCurveTo()	Creates a cubic Bézier curve	arc()	Creates an arc/curve (used to create circles, or parts of circles)	arcTo()	Creates an arc/curve between two tangents
+		isPointInPath()	Returns true if the specified point is in the current path, otherwise false			Image Drawing- drawImage()	Draws an image, canvas, or video onto the canvas
+	</details>
+	<details>
+		<summary>Transformations and Otheer</summary>		name	mapname	Required. Specifies the name of the image map		Pixel Manipulation-	width	Returns the width of an ImageData object
+		height	Returns the height of an ImageData object	data	Returns an object that contains image data of a specified ImageData object		Method	Description	createImageData()	Creates a new, blank ImageData object
+		getImageData()	Returns an ImageData object that copies the pixel data for the specified rectangle on a canvas	putImageData()	Puts the image data (from a specified ImageData object) back onto the canvas
+		Compositing-	globalAlpha	Sets or returns the current alpha or transparency value of the drawing	globalCompositeOperation	Sets or returns how a new image is drawn onto an existing image
+		Other-	Method	Description	-	save()	Saves the state of the current context	restore()	Returns previously saved path state and attributes	createEvent()
+		getContext()	 toDataURL()
+	</details>
+	</p>
+</section>
+</body>
+</html>
